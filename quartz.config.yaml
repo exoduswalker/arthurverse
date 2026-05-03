@@ -108,7 +108,7 @@ plugins:
   - source: github:quartz-community/remove-draft
     enabled: true
   - source: github:quartz-community/explicit-publish
-    enabled: false
+    enabled: true
     options: {}
   - source: github:quartz-community/unlisted-pages
     enabled: true
@@ -192,7 +192,7 @@ plugins:
       position: left
       priority: 10
   - source: github:quartz-community/darkmode
-    enabled: false
+    enabled: true
     layout:
       position: left
       priority: 30
@@ -262,7 +262,7 @@ plugins:
     enabled: true
     order: 50
     options:
-      theme: catppuccin
+      theme: catppuccin.frappe
 layout:
   groups:
     toolbar:
