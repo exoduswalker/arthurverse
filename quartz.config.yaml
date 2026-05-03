@@ -82,7 +82,7 @@ plugins:
     enabled: true
     order: 50
   - source: github:quartz-community/crawl-links
-    enabled: false
+    enabled: true
     options:
       markdownLinkResolution: shortest
     order: 60
