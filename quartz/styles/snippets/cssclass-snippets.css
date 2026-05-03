@@ -1,0 +1,9 @@
+/* hide properties in reading view */
+body .rv-no-properties {
+    --metadata-display-reading: none;
+}
+
+/* hide title in reading view */
+.rv-no-title.markdown-preview-view .inline-title {
+    display: none !important;
+}

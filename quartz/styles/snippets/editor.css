@@ -1,0 +1,57 @@
+.callout:is([data-callout=infobox i]) {
+  --table-border-color: unset;
+  margin-left: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.callout:is([data-callout=quote i]) {
+  --callout-padding: 10px 10px !important;
+}
+
+.callout:is([data-callout=infobox i]) * table > thead {
+    display: none
+}
+
+.callout:is([data-callout=infobox i]) * table * td {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.callout:is([data-callout=infobox i]) * table * tr:last-child td {
+    border-bottom: 0px !important;
+}
+
+.callout:is([data-callout=infobox i]) .callout-content {
+    padding: 0px !important;
+}
+
+.callout:is([data-callout=infobox i]) * h2 {
+    font-size: 16px !important;
+}
+.callout:is([data-callout=infobox i]) * :is(h1, h2) {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+.callout:is([data-callout=infobox i]) * table * {
+    font-size: 12px;
+    vertical-align: middle;
+}
+.callout:is([data-callout=infobox i]) * table * tr > td:first-child {
+    width: 16px;
+    font-weight: bold;
+}
+.callout:is([data-callout=infobox i]) * table * ul {
+    margin: 0px;
+}
+.callout:is([data-callout=infobox i]) * table * ul > li {
+    margin-left: 12px;
+}
+
+.infobox-note {
+    font-size: 10px !important;
+}
+
+h1, h2, h3, h4, h5, h6, .inline-title {
+    font-family: "Barlow" !important;
+}

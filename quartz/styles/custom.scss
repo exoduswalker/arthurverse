@@ -1,3 +1,8 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+@use "./snippets/callout-gallery.css"
+@use "./snippets/cssclass-snippets.css"
+@use "./snippets/editor.css"
+@use "./snippets/image-snippets.css"
+@use "./snippets/its-callout.css"

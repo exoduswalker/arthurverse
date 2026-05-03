@@ -1,0 +1,11 @@
+/* No decoration callout */
+div[data-callout="gallery"] {
+    --callout-color: transparent;
+    --callout-padding: 0;
+    margin: 0;
+    border: 0px !important;
+}
+
+div[data-callout="gallery"] .callout-title { 
+    display: none;
+}

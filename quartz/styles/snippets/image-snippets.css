@@ -1,0 +1,67 @@
+/** Image Grid from ITS-Callout **/
+.callout.callout[data-callout=grid] {
+  --callout-padding: 0;
+  --callout-content-padding: 0;
+  background: transparent;
+  border: 0;
+  margin: 0;
+  box-shadow: none;
+}
+.callout.callout[data-callout=grid] .callout-title {
+  display: none;
+}
+.callout.callout[data-callout=grid] .callout-content {
+  width: 100%;
+  border: 0;
+  box-shadow: unset;
+  padding: 0;
+  display: flex;
+  row-gap: 16px;
+  flex-wrap: wrap;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  align-items: stretch;
+}
+.callout.callout[data-callout=grid] .callout-content .callout.callout[data-callout=grid-image] {
+  --callout-padding: 0;
+  --callout-content-padding: 0;
+  background: transparent;
+  border: 0;
+  margin: 0;
+  box-shadow: none;
+  width: 180px;
+  padding: 0px;
+  display: inline-block;
+  align-items: center;
+  justify-items: center;
+}
+.callout.callout[data-callout=grid] .callout-content .callout.callout[data-callout=grid-image] .callout-content {
+  display: grid;
+  justify-content: center;
+  row-gap: unset;
+}
+.callout.callout[data-callout=grid-image] .callout-content p {
+  margin-top: 8px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: small;
+}
+.callout.callout[data-callout=grid-image] .callout-content p:has(.image-embed) {
+  margin: 0px;
+}
+.callout.callout[data-callout=grid-image] .callout-content .image-embed {
+  display: block;
+  width: 160px;
+  height: 160px;
+  padding: 0;
+  margin: auto;
+}
+.callout.callout[data-callout=grid-image] .callout-content img {
+  object-fit: contain;
+  width: fit-content;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0px;
+  height: -webkit-fill-available;
+  margin: auto;
+}
