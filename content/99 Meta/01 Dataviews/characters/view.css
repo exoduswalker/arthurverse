@@ -1,0 +1,80 @@
+.navbox {
+    border-spacing:0;
+    width: 100%;
+    display: table;
+    border-radius: 3px;
+    border: 2px solid var(--color-accent);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbox-inner {
+    margin: 0px !important;
+    width: 100%;
+}
+
+.navbox-inner .inbetween-padding td {
+    padding: 1px!important;
+    size: 0;
+}
+
+.navbox-inner :is(th,td) {
+    border: 0;
+}
+
+.navbox-inner th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.navbox-header {
+    background-color: var(--color-accent);
+    padding: 0.35em 1em;
+    line-height: 1.5em;
+    --table-header-color: black;
+}
+
+.navbox-group {
+    width: 100px;
+    padding: 0.35em 1em !important;
+    background-color: color-mix(in srgb, var(--color-accent), transparent 66%);
+}
+
+.navbox-list {
+    border-left: 2px solid var(--background-primary) !important;
+    text-align: unset;
+    padding: 0px !important;
+}
+
+.navbox-inner td.navbox-list.odd {
+    background-color: color-mix(in srgb, var(--color-accent), transparent 88%) !important;
+}
+
+.navbox-inner td.navbox-list.even {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+    border-radius: 7px;
+    background-image: linear-gradient(180deg,rgba(145, 89, 81, 1) 0%, rgba(197, 162, 110, 1) 100%);
+    margin: 2px 2px;
+    border: 0;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.card-job {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 16px;
+}
