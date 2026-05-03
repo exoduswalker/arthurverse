@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
-  pageTitleSuffix: ""
+  pageTitle: The Arthurverse
+  pageTitleSuffix: " - The Arthurverse"
   enableSPA: true
   enablePopovers: false
   analytics:
@@ -12,6 +12,7 @@ configuration:
     - private
     - templates
     - .obsidian
+    - '"98 Pre-Retcon"'
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
@@ -238,7 +239,7 @@ plugins:
     options: {}
     order: 50
   - source: github:quartz-community/note-properties
-    enabled: false
+    enabled: true
     options:
       includeAll: false
       includedProperties:
@@ -251,7 +252,6 @@ plugins:
       language: yaml
     order: 5
     layout:
-      position: beforeBody
       priority: 15
       display: all
   - source:
