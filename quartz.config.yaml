@@ -3,7 +3,7 @@ configuration:
   pageTitle: Quartz 5
   pageTitleSuffix: ""
   enableSPA: true
-  enablePopovers: true
+  enablePopovers: false
   analytics:
     provider: plausible
   locale: en-US
@@ -108,7 +108,8 @@ plugins:
   - source: github:quartz-community/remove-draft
     enabled: true
   - source: github:quartz-community/explicit-publish
-    enabled: false
+    enabled: true
+    options: {}
   - source: github:quartz-community/unlisted-pages
     enabled: true
     options: {}
