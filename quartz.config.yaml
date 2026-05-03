@@ -103,6 +103,7 @@ plugins:
   - source: github:quartz-community/ox-hugo
     enabled: false
     order: 91
+    options: {}
   - source: github:quartz-community/roam
     enabled: false
     order: 92
@@ -147,6 +148,7 @@ plugins:
     enabled: true
   - source: github:quartz-community/folder-page
     enabled: false
+    options: {}
   - source: github:quartz-community/tag-page
     enabled: false
   - source: github:quartz-community/explorer
@@ -154,9 +156,8 @@ plugins:
     layout:
       priority: 50
   - source: github:quartz-community/graph
-    enabled: false
+    enabled: true
     layout:
-      position: right
       priority: 10
   - source: github:quartz-community/search
     enabled: true
@@ -167,9 +168,8 @@ plugins:
       groupOptions:
         grow: true
   - source: github:quartz-community/backlinks
-    enabled: false
+    enabled: true
     layout:
-      position: right
       priority: 30
   - source: github:quartz-community/article-title
     enabled: true
@@ -177,14 +177,12 @@ plugins:
       position: beforeBody
       priority: 10
   - source: github:quartz-community/content-meta
-    enabled: false
+    enabled: true
     layout:
-      position: beforeBody
       priority: 20
   - source: github:quartz-community/tag-list
-    enabled: false
+    enabled: true
     layout:
-      position: beforeBody
       priority: 30
   - source: github:quartz-community/page-title
     enabled: true
@@ -198,15 +196,13 @@ plugins:
       priority: 30
       group: toolbar
   - source: github:quartz-community/reader-mode
-    enabled: false
+    enabled: true
     layout:
-      position: left
       priority: 35
       group: toolbar
   - source: github:quartz-community/breadcrumbs
-    enabled: false
+    enabled: true
     layout:
-      position: beforeBody
       priority: 5
       condition: not-index
   - source: github:quartz-community/comments
